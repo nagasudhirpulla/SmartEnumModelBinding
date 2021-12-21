@@ -1,0 +1,49 @@
+﻿@page
+@using SmartEnumBinding.Enums
+@model CreateModel
+@{
+    ViewData["Title"] = "Create User";
+}
+
+<h2>Demo Form to test smart enum model binding</h2>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Usr.UserName" class="control-label"></label>
+                <input asp-for="Usr.UserName" class="form-control" />
+                <span asp-validation-for="Usr.UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Usr.Gender" class="control-label"></label>
+                <select asp-for="Usr.Gender" class="form-control">
+                    @foreach (var item in GenderEnum.List)
+                    {
+                        <option value="@item.Name" selected="@(item == Model.Usr.Gender)">@item.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="Usr.Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Usr.UsrRole" class="control-label"></label>
+                <select asp-for="Usr.UsrRole" class="form-control">
+                    @foreach (var item in RoleEnum.List)
+                    {
+                        <option value="@item.Name" selected="@(item == Model.Usr.UsrRole)">@item.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="Usr.UsrRole" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
