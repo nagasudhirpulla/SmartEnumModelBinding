@@ -1,5 +1,5 @@
 ## Smart Enum model binding for dotnet MVC or Razor page forms
-This repository is created to facilitate the model binding of (SmartEnum)[https://github.com/ardalis/SmartEnum] in dotnet MVC / Razor Pages forms. This issue is also created in SmartEnum github repository [here](https://github.com/ardalis/SmartEnum/issues/70)
+This repository is created to facilitate the model binding of [SmartEnum](https://github.com/ardalis/SmartEnum) in dotnet MVC / Razor Pages forms. This issue is also created in SmartEnum github repository [here](https://github.com/ardalis/SmartEnum/issues/70)
 
 ### How to use
 * Use the Model Binder Class from [here](./SmartEnum.ModelBinding/SmartEnumModelBinder.cs)
