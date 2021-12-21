@@ -1,4 +1,5 @@
 ## Smart Enum model binding for dotnet MVC or Razor page forms
+This repository is created to solve the model binding of (SmartEnum)[https://github.com/ardalis/SmartEnum] in dotnet MVC / Razor Pages forms. This issue is also created in SmartEnum github repository [here](https://github.com/ardalis/SmartEnum/issues/70)
 
 ### How to use
 * Create the Model Binder Class from [here](./SmartEnum.ModelBinding/SmartEnumModelBinder.cs)
@@ -24,3 +25,7 @@
     <span asp-validation-for="Usr.Gender" class="text-danger"></span>
 </div>
 ```
+
+### Main Files
+* The main classes are located (here)[./SmartEnum.ModelBinding]
+* You can just copy these files and use in your web application for smart enum model binding
