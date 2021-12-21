@@ -27,5 +27,5 @@ This repository is created to facilitate the model binding of (SmartEnum)[https:
 ```
 
 ### Main Files
-* The main classes are located (here)[./SmartEnum.ModelBinding]
+* The main classes are located [here](./SmartEnum.ModelBinding)
 * You can just copy these files and use in your web application for smart enum model binding
